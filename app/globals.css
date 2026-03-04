@@ -10,6 +10,16 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Крупнее все типовые размеры текста Tailwind */
+  --text-xs: 0.875rem;   /* было ~0.75rem */
+  --text-sm: 1rem;       /* было ~0.875rem */
+  --text-base: 1.125rem; /* было 1rem */
+  --text-lg: 1.3125rem;  /* было 1.125rem */
+  --text-xl: 1.5rem;
+  --text-2xl: 1.875rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 2.75rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +27,11 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+:root {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 body {
